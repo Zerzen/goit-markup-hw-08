@@ -1,0 +1,9 @@
+.footer {
+  background-color: map-get($colors, 'bcg-color-accent');
+  padding: 60px 0;
+}
+
+.footer-flex-div {
+  display: flex;
+  align-items: baseline;
+}

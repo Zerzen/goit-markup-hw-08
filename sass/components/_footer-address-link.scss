@@ -1,0 +1,26 @@
+.address__link {
+  transition-property: color;
+  color: map-get($colors, 'footer-text-color');
+  font-size: 14px;
+  line-height: 1.71;
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'accent-text-color');
+  }
+}
+.address__link[target] {
+  color: map-get($colors, 'accent-praimery-white-color');
+  transition-property: color;
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    color: map-get($colors, 'accent-text-color');
+  }
+}
+
+.address__list {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}

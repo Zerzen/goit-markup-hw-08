@@ -1,0 +1,22 @@
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: map-get($colors, 'logo-color-header');
+  margin-right: 93px;
+  transition-property: color;
+}
+.logo {
+  & span {
+    color: map-get($colors, 'accent-text-color');
+  }
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'accent-text-color');
+    transition: color 250ms;
+  }
+}

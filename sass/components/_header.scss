@@ -1,0 +1,45 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
+.site__nav,
+.nav__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site__nav-li:not(:last-child),
+.cotnact__nav-link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site__nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: map-get($colors, 'title-text-color');
+  transition-property: color;
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'accent-text-color');
+  }
+}
+
+.site__nav-link--current {
+  color: map-get($colors, 'accent-text-color');
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-3px);
+    border-radius: 2px;
+    background-color: map-get($colors, 'accent-text-color');
+  }
+}

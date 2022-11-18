@@ -1,0 +1,50 @@
+.our-team {
+  background-color: map-get($colors, 'accent-background-color');
+}
+
+.our-team__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: map-get($colors, 'title-text-color');
+}
+
+.list-item__wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.list-item__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: map-get($colors, 'title-text-color');
+}
+
+.list-item {
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team__list {
+  display: flex;
+  gap: 30px;
+  & img {
+    display: block;
+  }
+}
+
+.list__item-post {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,38 @@
+.our-jobs {
+  padding-top: 0px;
+}
+
+.our-jobs__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: map-get($colors, 'title-text-color');
+}
+.our-jobs__list {
+  display: flex;
+  & img {
+    display: block;
+  }
+  & li + li {
+    margin-left: 30px;
+  }
+}
+.our-jobs__list-li {
+  position: relative;
+}
+
+.our-jobs__list-post {
+  height: 70px;
+  @extend %flex-center;
+  width: 100%;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  color: map-get($colors, 'accent-praimery-white-color');
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  transform: translateY(-70px);
+}

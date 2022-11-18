@@ -1,0 +1,57 @@
+.backdrop-modal {
+  @extend %flex-center;
+  z-index: 2;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  background: map-get($colors, 'accent-praimery-white-color');
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scaleX(100%);
+  transform-origin: right center;
+}
+
+.is-hidden {
+  transform-origin: right center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scaleX(0);
+}
+
+.modal__close {
+  @extend %flex-center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: map-get($colors, 'accent-praimery-white-color');
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition-property: fill;
+
+  &:hover,
+  &:focus {
+    fill: map-get($colors, 'accent-text-color');
+  }
+}
+
+.modal__svg__close {
+  width: 11px;
+  height: 11px;
+}

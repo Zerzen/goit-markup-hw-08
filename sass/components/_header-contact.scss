@@ -1,0 +1,28 @@
+.cotnact__nav-link {
+  @extend %flex-center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+
+  color: map-get($colors, 'primary-text-color');
+  transition-property: color;
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'accent-text-color');
+  }
+}
+
+.cotnact__nav-svg {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.phone {
+  width: 12px;
+  height: 16px;
+}
