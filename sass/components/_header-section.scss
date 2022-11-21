@@ -3,13 +3,20 @@ header {
 }
 .site__nav,
 .nav__wrap {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
-.site__nav-li:not(:last-child),
+.site__nav {
+  gap: 50px;
+}
+.site__nav-li--conact:not(:last-child),
 .cotnact__nav-link:not(:last-child) {
   margin-right: 50px;
+  @media screen and(min-width:481px) and (max-width: 1199px) {
+    margin: 0px;
+  }
 }
 
 .site__nav-link {

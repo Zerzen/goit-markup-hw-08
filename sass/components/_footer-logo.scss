@@ -6,8 +6,10 @@
   &:focus {
     color: map-get($colors, 'accent-text-color');
   }
-}
-
-.footer-logo {
   padding: 0px;
+  @media screen and (max-width: 1199px) {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }

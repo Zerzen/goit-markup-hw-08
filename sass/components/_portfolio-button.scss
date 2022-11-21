@@ -5,6 +5,15 @@
   & li:not(:last-child) {
     margin-right: 8px;
   }
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  & li {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .portfolio-button-list {

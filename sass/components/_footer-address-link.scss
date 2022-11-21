@@ -1,3 +1,12 @@
+.wrap-address-footer {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    width: calc(100% / 2);
+  }
+}
+
 .address__link {
   transition-property: color;
   color: map-get($colors, 'footer-text-color');
@@ -22,5 +31,11 @@
   margin-bottom: 9px;
   &:last-child {
     margin-bottom: 0px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
   }
 }

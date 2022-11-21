@@ -1,6 +1,10 @@
 .customers__list {
   display: flex;
   gap: 30px;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .customers__title {
   margin-bottom: 50px;
@@ -10,7 +14,14 @@
   letter-spacing: 0.03em;
   color: map-get($colors, title-text-color);
 }
-
+.customers__li {
+  @media screen and (max-width: 1199px) {
+    width: calc((100% - 60px) / 3);
+  }
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+  }
+}
 .customers__li a {
   @extend %flex-center;
   outline: 1px solid #afb1b8;
@@ -23,6 +34,9 @@
   &:focus {
     outline-color: map-get($colors, 'accent-text-color');
     color: map-get($colors, 'accent-text-color');
+  }
+  @media screen and (max-width: 1199px) {
+    width: 100%;
   }
 }
 

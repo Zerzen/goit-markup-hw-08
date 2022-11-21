@@ -18,27 +18,34 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <div class="container nav__wrap">
-        <nav class="site__nav">
-          <a class="logo time-animation" href="./index.html"><span>Web</span>Studio</a>
+        <nav class="header-nav">
+          <a class="logo time-animation" href="/index.html"><span>Web</span>Studio</a>
+          <!-- Кнопка для мобильного меню -->
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="svg-open"><use href="./images/symbol-defs.svg#icon-menu"></use></svg>
+          </button>
+          <!-- десктопное меню -->
           <ul class="site__nav">
             <li class="site__nav-li">
-              <a class="site__nav-link time-animation" href="./index.html">Студія</a>
+              <a class="site__nav-link time-animation" href="index.html">Студія</a>
             </li>
             <li class="site__nav-li">
-              <a class="site__nav-link time-animation site__nav-link--current" href="#"
-                >Портфоліо</a
-              >
+              <a class="site__nav-link time-animation site__nav-link--current" href="">Портфоліо</a>
             </li>
             <li class="site__nav-li">
               <a class="site__nav-link time-animation" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-
-        <ul class="cotnact__nav site__nav">
-          <li class="site__nav-li">
+        <!-- Десктопные контакты -->
+        <ul class="site__nav-contact">
+          <li class="site__nav-li--conact">
             <a class="cotnact__nav-link time-animation" href="mailto:info@devstudio.com">
               <svg class="cotnact__nav-svg">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
@@ -46,7 +53,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="site__nav-li">
+          <li class="site__nav-li--contact">
             <a class="cotnact__nav-link time-animation" href="tel:+380961111111">
               <svg class="cotnact__nav-svg phone">
                 <use href="./images/symbol-defs.svg#icon-Vector"></use>
@@ -55,6 +62,61 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="container">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu modal__close time-animation">
+            <svg class="modal__svg--close">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <div class="container-mob-menu">
+            <div class="mob-menu-top">
+              <ul class="site__nav-list">
+                <li class="site__nav-li">
+                  <a class="site__nav-link-mob time-animation" href="">Студія</a>
+                </li>
+                <li class="site__nav-li">
+                  <a class="site__nav-link-mob time-animation" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="site__nav-li">
+                  <a class="site__nav-link-mob time-animation" href="#">Контакти</a>
+                </li>
+              </ul>
+              <ul class="cotnact__nav-mob">
+                <li class="site__nav-li-mob">
+                  <a class="cotnact__nav-link-mob-tel time-animation" href="tel:+380961111111">
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="site__nav-li-mob">
+                  <a
+                    class="cotnact__nav-link-mob-mail time-animation"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="social__container">
+                <li class="cosial-list-mob">
+                  <a href="" class="social-link-mob">Instagram</a>
+                </li>
+                <li class="cosial-list-mob">
+                  <a href="" class="social-link-mob">Twitter</a>
+                </li>
+                <li class="cosial-list-mob">
+                  <a href="" class="social-link-mob">Facebook</a>
+                </li>
+                <li class="cosial-list-mob">
+                  <a href="" class="social-link-mob">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -213,7 +275,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-flex-div">
-        <div class="wrap-address-footer">
+        <div class="wrap-address-footer tablet-media-width">
           <a class="logo footer-logo time-animation" href="./index.html"><span>Web</span>Studio</a>
           <address>
             <ul class="address">
@@ -239,7 +301,7 @@
             </ul>
           </address>
         </div>
-        <div class="wrap-footer-svg">
+        <div class="wrap-footer-svg tablet-media-width">
           <p>приєднуйтесь</p>
           <ul class="footer-social">
             <li class="footer-social-li">
@@ -286,5 +348,13 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

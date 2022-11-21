@@ -1,0 +1,130 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 10px;
+  padding-top: 48px;
+  background-color: #fff;
+  z-index: 999;
+
+  // transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  display: none;
+}
+
+.menu-container.is-open {
+  // transform: translateX(0);
+  display: block;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.svg-open {
+  width: 24px;
+  height: 16px;
+}
+.modal__svg--close {
+  width: 16px;
+  height: 25px;
+}
+.menu-toggle {
+  height: 16px;
+  display: block;
+  background-color: #fff;
+  margin-top: 24px;
+
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
+.site__nav-link-mob {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: map-get($colors, 'title-text-color');
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'accent-text-color');
+  }
+}
+
+.mob-menu-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
+.site__nav-list {
+  margin-bottom: 300px;
+}
+.cotnact__nav-mob {
+  margin-bottom: 64px;
+}
+.site__nav-li-mob:not(:last-child) {
+  margin-bottom: 32px;
+}
+.cotnact__nav-link-mob-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+
+  color: map-get($colors, 'accent-text-color');
+}
+.cotnact__nav-link-mob-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: map-get($colors, 'primary-text-color');
+}
+
+.social__container {
+  display: flex;
+}
+.cosial-list-mob {
+  &:not(:last-child) {
+    padding-right: 10px;
+
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+}
+.social-link-mob {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: map-get($colors, 'accent-text-color');
+}
+.site__nav-li--contact {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.site__nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.site__nav-contact {
+  justify-content: flex-end;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

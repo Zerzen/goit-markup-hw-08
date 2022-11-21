@@ -1,0 +1,25 @@
+.modal__close {
+  @extend %flex-center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: map-get($colors, 'accent-praimery-white-color');
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition-property: fill;
+
+  &:hover,
+  &:focus {
+    fill: map-get($colors, 'accent-text-color');
+  }
+}
+.modal__svg__close {
+  width: 11px;
+  height: 11px;
+}

@@ -6,4 +6,14 @@
 .footer-flex-div {
   display: flex;
   align-items: baseline;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
