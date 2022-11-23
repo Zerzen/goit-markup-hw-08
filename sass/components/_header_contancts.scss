@@ -1,7 +1,7 @@
 .cotnact__nav-link {
   @extend %flex-center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -15,9 +15,8 @@
   }
 
   @media screen and (min-width: 481px) and (max-width: 1199px) {
-    padding-bottom: 10px;
-    padding-top: 10px;
     font-size: 12px;
+    padding: 0px;
   }
 }
 
@@ -35,7 +34,7 @@
 .site__nav-contact {
   width: 100%;
   display: flex;
-
+  align-items: flex-end;
   align-items: center;
   @media screen and (max-width: 767px) {
     display: none;

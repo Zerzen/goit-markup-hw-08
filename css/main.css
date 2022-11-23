@@ -79,6 +79,13 @@ header {
   transform: scaleX(0);
 }
 
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 header {
   border-bottom: 1px solid #ececec;
 }
@@ -102,14 +109,29 @@ header {
 @media screen and (min-width: 481px) and (max-width: 1199px) {
   .site__nav-li--conact:not(:last-child),
 .cotnact__nav-link:not(:last-child) {
-    margin: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .site__nav-li--conact {
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .site__nav-li--conact a:not(:last-child) {
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 }
 
 .site__nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 24px;
   font-weight: 500;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
@@ -138,8 +160,8 @@ header {
 
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.1923076923;
@@ -183,6 +205,7 @@ header {
 .header-nav {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   width: 100%;
 }
 
@@ -223,7 +246,7 @@ header {
 .mob-menu-top {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .mob-menu-top {
@@ -232,7 +255,15 @@ header {
 }
 
 .site__nav-list {
-  margin-bottom: 300px;
+  margin-bottom: auto;
+}
+
+.site__nav-list li:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.acent {
+  color: #2196f3;
 }
 
 .cotnact__nav-mob {
@@ -261,6 +292,7 @@ header {
 
 .social__container {
   display: flex;
+  margin-bottom: 48px;
 }
 
 .cosial-list-mob:not(:last-child) {
@@ -307,8 +339,8 @@ header {
 }
 
 .cotnact__nav-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -321,9 +353,8 @@ header {
 }
 @media screen and (min-width: 481px) and (max-width: 1199px) {
   .cotnact__nav-link {
-    padding-bottom: 10px;
-    padding-top: 10px;
     font-size: 12px;
+    padding: 0px;
   }
 }
 
@@ -343,6 +374,7 @@ header {
 .site__nav-contact {
   width: 100%;
   display: flex;
+  align-items: flex-end;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
@@ -434,24 +466,26 @@ header {
   margin: 0 auto;
   padding: 200px 0;
   background-repeat: no-repeat;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imgfon.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imgfon.jpg);
 }
 @media screen and (max-width: 767px) {
   .hero {
     height: 400px;
-    max-width: 480px;
-    padding: 127px 0;
+    padding: 118px 0;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
+    background-position: center;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     height: 400px;
-    width: 768px;
     padding: 127px 0;
     background-repeat: no-repeat;
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -471,7 +505,7 @@ header {
 @media screen and (max-width: 1199px) {
   .section-title-hero {
     font-size: 26px;
-    width: 360px;
+    max-width: 360px;
   }
 }
 
@@ -665,6 +699,7 @@ header {
 @media screen and (max-width: 1199px) {
   .benefits__list li:not(:last-child) {
     margin-right: 0px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -728,6 +763,12 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (max-width: 1199px) {
+  .our-team__title {
+    font-size: 28px;
+    line-height: 0.8484848485;
+  }
 }
 
 .list-item__wrap {
@@ -913,12 +954,12 @@ header {
   .footer-flex-div {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
   .footer-flex-div {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1098,6 +1139,8 @@ header {
 @media screen and (max-width: 1199px) {
   .mailing-input {
     width: 100%;
+    max-width: 450px;
+    margin: auto;
     margin-bottom: 20px;
   }
 }

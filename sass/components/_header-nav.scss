@@ -21,6 +21,7 @@
 .header-nav {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   width: 100%;
 }
 .svg-open {
@@ -57,13 +58,19 @@
 .mob-menu-top {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
   @media screen and(min-width:768px) {
     display: none;
   }
 }
 .site__nav-list {
-  margin-bottom: 300px;
+  margin-bottom: auto;
+}
+.site__nav-list li:not(:last-child) {
+  margin-bottom: 36px;
+}
+.acent {
+  color: #2196f3;
 }
 .cotnact__nav-mob {
   margin-bottom: 64px;
@@ -90,6 +97,7 @@
 
 .social__container {
   display: flex;
+  margin-bottom: 48px;
 }
 .cosial-list-mob {
   &:not(:last-child) {
