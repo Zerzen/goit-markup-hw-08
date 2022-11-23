@@ -11,20 +11,21 @@ header {
 .site__nav {
   gap: 50px;
 }
-.site__nav-li--conact:not(:last-child),
+.site__nav-li--contact:not(:last-child),
 .cotnact__nav-link:not(:last-child) {
   margin-right: 50px;
   @media screen and(min-width:481px) and (max-width: 1199px) {
     margin-right: 0px;
   }
 }
-.site__nav-li--conact {
+.site__nav-li--contact {
   @media screen and(min-width:481px) and (max-width: 1199px) {
     margin-bottom: 10px;
     margin-right: 0px;
+    margin-left: auto;
   }
 }
-.site__nav-li--conact a:not(:last-child) {
+.site__nav-li--contact a:not(:last-child) {
   @media screen and (min-width: 481px) and (max-width: 1199px) {
     font-size: 12px;
     padding-bottom: 10px;
