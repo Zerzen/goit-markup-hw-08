@@ -19,8 +19,11 @@
   border-radius: 4px;
   transform: scaleX(100%);
   transform-origin: right center;
-  @media screen and( max-width:769px) {
+  @media screen and( max-width:767px) {
     padding: 32px;
+  }
+  @media screen and( max-width:1199px) {
+    max-width: 450px;
   }
 }
 

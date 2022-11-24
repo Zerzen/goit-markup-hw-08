@@ -8,6 +8,7 @@
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: flex-start;
+    row-gap: 15px;
   }
   & li {
     @media screen and (max-width: 767px) {
@@ -18,7 +19,7 @@
 
 .portfolio-button-list {
   border: 0px;
-  padding: 6px 22px;
+  padding: 6px 25px;
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;

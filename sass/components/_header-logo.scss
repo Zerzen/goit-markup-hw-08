@@ -1,7 +1,7 @@
 .logo {
   display: block;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-family: 'Raleway';
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -11,6 +11,10 @@
   transition-property: color;
   @media screen and (min-width: 481px) and (max-width: 1199px) {
     font-size: 24px;
+  }
+  @media screen and(max-width: 767px) {
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 }
 .logo {

@@ -6,7 +6,9 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  @media screen and (min-width: 1199px) {
+    align-items: baseline;
+  }
 }
 .site__nav {
   gap: 50px;
@@ -20,8 +22,8 @@ header {
 }
 .site__nav-li--contact {
   @media screen and(min-width:481px) and (max-width: 1199px) {
-    margin-bottom: 10px;
-    margin-right: 0px;
+    margin-bottom: 7px;
+    margin-right: 10px;
     margin-left: auto;
   }
 }
@@ -35,7 +37,7 @@ header {
 .site__nav-link {
   display: block;
   padding-top: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 27px;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -44,6 +46,11 @@ header {
   &:hover,
   &:focus {
     color: map-get($colors, 'accent-text-color');
+  }
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+    font-size: 12px;
+    padding-bottom: 28px;
+    padding-top: 10px;
   }
 }
 
